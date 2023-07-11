@@ -1,0 +1,67 @@
+@import '../../global.scss';
+
+.form{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  background-color: $bg-card;
+  border-radius: 5px;
+  padding: 30px 10px;
+
+
+  h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #919191;
+
+    &:nth-child(2), &:nth-child(3){
+      text-transform: uppercase;
+    }
+
+    &:nth-child(2):focus{
+      text-transform: uppercase;
+    }
+    &:nth-child(3):focus{
+      text-transform: uppercase;
+    }
+  }
+
+  button{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background-color: $cadastrar-hover;
+  color: #fff;
+  transition: .2s;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $cadastrar;
+    transform: scale(1.01);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .form{
+    width: 90%;
+    margin: 10px;
+  }
+}

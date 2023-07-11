@@ -1,0 +1,31 @@
+@import '../../global.scss';
+
+.header{
+  width: 100%;
+  height: 70px;
+  background-color: $bg-header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    background-color: $cadastrar-hover;
+    color: #fff;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $cadastrar;
+      transform: scale(1.1);
+    }
+  }
+}

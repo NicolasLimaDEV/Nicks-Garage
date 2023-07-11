@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+$bg-header: #3a3a3a;
+$bg: #636363;
+$amarelo:  #ffe81b;
+$cadastrar: #3ec53e;
+$cadastrar-hover: #1a821a;
+$bg-card: #505050;
+
+body{
+  font-family: sans-serif;
+  background-color: $bg;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}

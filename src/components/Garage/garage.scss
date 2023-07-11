@@ -1,0 +1,42 @@
+@import '../../global.scss';
+
+.main-garage{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: $bg-card;
+  box-shadow: 0 0 10px rgba(108, 107, 107, 0.6);
+  
+  span{
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: $amarelo;
+  }
+
+  .content{
+    width: 100%;
+    color: #fff;
+  }
+
+  .carro{
+    text-transform: capitalize;
+    margin: 6px auto;
+  }
+
+  .placa{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main-garage{
+    width: 350px;
+  }
+}
